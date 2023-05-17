@@ -1,0 +1,47 @@
+/////////////////////////////////////////////////////////////////////////////////
+//
+// Problem Statement : Write a program which Accept N and print first 5 multiples of N.
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : MultipleDisplay
+//  Input :         integer
+//  Output :        void
+//  Description :   Write a program which Accept N and print first 5 multiples of N.
+//  Author :        Saurabh Nathaji Bane
+//  Date :          05/05/2023
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+void MultipleDisplay(int iNo)
+{
+    int iCnt =0;
+    int iResult = 0;
+
+    for(iCnt = 1; iCnt<=5; iCnt++)
+    {
+        iResult = iNo * iCnt;
+        printf("%d\t",iResult);
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//  Entry Point function
+/////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue =0;
+
+    printf("ENter Number : ");
+    scanf("%d",&iValue);
+
+    MultipleDisplay(iValue);
+
+    return 0;
+}
